@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<volist name="arr" id="vo">
+    {$vo.hour_ent}:-----:{$vo.hour_start} <br>
+    <volist name="vo.money" id="vom">
+        今日线上充值金额：{$vom.money}
+    </volist>
+    <volist name="vo.coin" id="voc">
+        今日手动充值金额：{$voc.coin}
+    </volist>
+</volist>
+</body>
+</html>
